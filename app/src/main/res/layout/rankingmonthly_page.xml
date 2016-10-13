@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:id="@+id/monthlyRankTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#ffffff">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d7fdae">
+
+            <TextView
+                android:layout_weight="0.2"
+                android:text="순위"
+                android:textAlignment="center"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_weight="0.4"
+                android:text="ID"
+                android:textAlignment="center"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_weight="0.4"
+                android:text="점수"
+                android:textAlignment="center"
+                android:textSize="25dp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/rank1"
+                android:layout_margin="10dp"
+                android:layout_weight="0.2"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/id1"
+                android:layout_margin="10dp"
+                android:layout_weight="0.4"
+                android:text="사용자 ID"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/score1"
+                android:layout_margin="10dp"
+                android:layout_weight="0.4"
+                android:text="Score"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/rank2"
+                android:layout_margin="10dp"
+                android:layout_weight="0.2"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/id2"
+                android:layout_margin="10dp"
+                android:layout_weight="0.4"
+                android:text="사용자 ID"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/score2"
+                android:layout_margin="10dp"
+                android:layout_weight="0.4"
+                android:text="Score"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/rank3"
+                android:layout_margin="10dp"
+                android:layout_weight="0.2"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/id3"
+                android:layout_margin="10dp"
+                android:layout_weight="0.4"
+                android:text="사용자 ID"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/score3"
+                android:layout_margin="10dp"
+                android:layout_weight="0.4"
+                android:text="Score"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/rank4"
+                android:layout_margin="10dp"
+                android:layout_weight="0.2"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/id4"
+                android:layout_margin="10dp"
+                android:layout_weight="0.4"
+                android:text="사용자 ID"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/score4"
+                android:layout_margin="10dp"
+                android:layout_weight="0.4"
+                android:text="Score"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/rank5"
+                android:layout_margin="10dp"
+                android:layout_weight="0.2"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/id5"
+                android:layout_margin="10dp"
+                android:layout_weight="0.4"
+                android:text="사용자 ID"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/score5"
+                android:layout_margin="10dp"
+                android:layout_weight="0.4"
+                android:text="Score"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:text="나의 순위"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:padding="2dp">
+
+        <TableRow android:background="#d7fdae">
+
+            <TextView
+                android:layout_weight="0.2"
+                android:text="순위"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_weight="0.4"
+                android:text="내 ID"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_weight="0.4"
+                android:text="점수"
+                android:textSize="25dp" />
+        </TableRow>
+
+        <TableRow android:background="#ffffff">
+
+            <TextView
+                android:id="@+id/my_rank"
+                android:layout_weight="0.2"
+                android:text="등수"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/my_id"
+                android:layout_weight="0.4"
+                android:text="사용자 ID"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/my_score"
+                android:layout_weight="0.4"
+                android:text="Score"
+                android:textSize="20dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

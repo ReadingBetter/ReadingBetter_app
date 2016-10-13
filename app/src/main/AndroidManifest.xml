@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.readingbetter">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon1"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key" />
+
+        <activity android:name=".IntroActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <!-- 사용자의 친구가 카톡으로 결과를 받고 앱으로 이동 버튼을 누르는 경우 -->
+                <!-- 실행될 Activity 를 설정하는 부분 -->
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:scheme="@string/kakao_scheme"
+                    android:host="@string/kakaolink_host" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" />
+        <activity android:name=".BookListActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MembershipActivity" />
+        <activity android:name=".RankingActivity" />
+        <activity android:name=".SettingActivity" />
+        <activity android:name=".BookInfoActivity" />
+        <activity
+            android:name=".ReviewActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".MakeQuizActivity" />
+        <activity android:name=".SolveQuizActivity" />
+        <activity android:name=".QuizResultActivity" />
+        <activity android:name=".RankingMonthlyActivity"/>
+        <activity android:name=".RankingSchoolActivity"/>
+        <activity android:name=".RankingHonorActivity"/>
+        <activity android:name=".HistoryActivity"/>
+        <activity android:name=".GifticonActivity"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffd4ffc8"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="마이 페이지"
+        android:textSize="40dp"
+        android:layout_marginBottom="20dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon1" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <TableRow>
+
+            <TextView
+                android:layout_margin="5dp"
+                android:text="ID"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/id"
+                android:layout_margin="5dp"
+                android:textSize="20dp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_margin="5dp"
+                android:text="버전"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/version"
+                android:layout_margin="5dp"
+                android:textSize="20dp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_margin="5dp"
+                android:text="캔디"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_margin="5dp"
+                android:text="x"
+                android:textSize="20dp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_margin="5dp"
+                android:text="제작"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_margin="5dp"
+                android:text="졸업하나"
+                android:textSize="20dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnShop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="기프티콘"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btnHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="히스토리"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

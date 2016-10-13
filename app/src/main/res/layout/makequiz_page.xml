@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffd4ffc8"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#ff91ff1d"
+        android:orientation="horizontal">
+
+        <WebView
+            android:id="@+id/cover"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="1.5"
+            android:scaleType="fitStart" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="책이름"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="문제 내기"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="관리자의 승인 후 등록됩니다." />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/quiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="문제를 입력해주세요."
+            android:inputType="textMultiLine"
+            android:textSize="20dp" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:padding="5dp"
+            android:rowCount="4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="보기1"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/ex1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="보기2"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/ex2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="보기3"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/ex3"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="보기4"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/ex4"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:textSize="20dp" />
+
+        </GridLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnPrev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이전"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="정답"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/answer"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="제출"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

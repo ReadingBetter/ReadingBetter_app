@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="kakaolink-1.0.52">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.kakao.sdk/kakaolink/1.0.52/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.kakao.sdk/kakaolink/1.0.52/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.kakao.sdk/kakaolink/1.0.52/1dda65cf8a59152ac6248d4a69951c3fabe50810/kakaolink-1.0.52-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
